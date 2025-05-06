@@ -35,3 +35,26 @@
    cd Makeup_project
    ```
 
+2. 安裝所需套件：
+```bash
+pip install -r requirement.txt
+```
+3. 執行預處理與化妝效果應用：
+```bash
+jupyter notebook data_preprocessing.ipynb
+jupyter notebook put_color_on_face.ipynb
+```
+## 🚀 模型訓練
+執行
+`train_model_code/`裡的程式
+Autoencoder 和 DenseNet的訓練碼
+
+📈 訓練流程
+預處理資料以便訓練
+使用 Autoencoder 和 DenseNet 進行模型訓練
+將訓練結果儲存於 saved_model/
+套用訓練完成的模型產生化妝效果圖
+
+🎨 範例成果
+輸入：test.jpg
+輸出：outcome.jpg（已套用化妝效果）
